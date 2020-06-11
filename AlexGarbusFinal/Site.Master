@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AlexGarbusFinal.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Garb & Corncob: Copyright Calamity Item Database</title>
+	<link href="style/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+		<header>
+			<img src="images/logo.png" />
+		</header>
+		<nav>
+			<a href="default.aspx">Home</a>
+			<a href="query.aspx">Search</a>
+			<a href="insert.aspx">Add</a>
+		</nav>
+		<main>
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+		</main>
+		<footer>
+			© Alex Garbus<br/>
+			CSC 313 Final Exam<br/>
+			5/8/2019<br/>
+		</footer>
+    </form>
+</body>
+</html>
